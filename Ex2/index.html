@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form action="calculator.php" method="POST" id="calculator">
+    <div class="calc-part">
+        <input type="text" name="argument[]" class="argument">
+        <div class="operator">
+            <input type="radio" name="operator" value="+" id="+">
+            <label for="+">+</label>
+            <input type="radio" name="operator" value="-" id="-">
+            <label for="-">-</label>
+            <input type="radio" name="operator" value="*" id="*">
+            <label for="*">*</label>
+            <input type="radio" name="operator" value="/" id="/">
+            <label for="/">/</label>
+        </div>
+        <input type="text" name="argument[]" class="argument">
+    </div>
+    <input type="submit">
+</form>
+</body>
+</html>
