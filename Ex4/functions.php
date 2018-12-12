@@ -49,3 +49,7 @@
 
 		return $goods;
 	}
+
+	function getAdminGood($id) {
+		return mysqli_fetch_assoc(connection("select * from goods where id = '" . $id . "'"));
+	}
